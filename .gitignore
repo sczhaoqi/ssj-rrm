@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+react-redux-material/node_modules
+react-redux-material/.pnp
+react-redux-material/.pnp.js
+
+# testing
+react-redux-material/coverage
+
+# production
+react-redux-material/build
+
+# misc
+react-redux-material/.DS_Store
+react-redux-material/.env.local
+react-redux-material/.env.development.local
+react-redux-material/.env.test.local
+react-redux-material/.env.production.local
+
+react-redux-material/npm-debug.log*
+react-redux-material/yarn-debug.log*
+react-redux-material/yarn-error.log*
+
+springboot-security-jwt/.idea/
+springboot-security-jwt/.idea/*
+springboot-security-jwt/log/
+springboot-security-jwt/logs/
+springboot-security-jwt/*.iml
+springboot-security-jwt/**/target/
+springboot-security-jwt/target/
+springboot-security-jwt/**/*.iml
