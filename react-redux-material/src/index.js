@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'index.css';
+// import 'index.css';
+import 'index.scss';
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Redirect, Switch } from "react-router-dom";
 import * as serviceWorker from 'serviceWorker';
 
 import BasicRouters from "routes/Router";
+import BasicRedirects from "routes/Redirect"
 
 const hist = createBrowserHistory();
 ReactDOM.render(
@@ -13,6 +15,9 @@ ReactDOM.render(
     <Switch>
       {BasicRouters.map((prop, key) => {
         return <Route exact path={prop.path} component={prop.component} key={key} />;
+      })}
+      {BasicRedirects.map((prop, key) => {
+        return <Redirect from={prop.from} to={prop.to} />;
       })}
     </Switch>
   </Router>, document.getElementById('root'));
