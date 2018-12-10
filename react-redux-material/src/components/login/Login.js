@@ -8,13 +8,17 @@ class Login extends React.Component {
       super();
       this.handleChange = this.handleChange.bind(this);
       this.Auth = new AuthService();
+      this.toApp = this.toApp.bind(this)
+  }
+  toApp(){
+      this.props.history.push("/app")
   }
   render() {
       return (
           <div className="center">
               <div className="card">
                   <h1>Login</h1>
-                  <form>
+                  <form onSubmit={this.toApp}>
                       <input
                           className="form-item"
                           placeholder="Username goes here..."

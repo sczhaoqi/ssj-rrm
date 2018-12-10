@@ -17,7 +17,7 @@ ReactDOM.render(
         return <Route exact path={prop.path} component={prop.component} key={key} />;
       })}
       {BasicRedirects.map((prop, key) => {
-        return <Redirect from={prop.from} to={prop.to} />;
+        return <Redirect from={prop.from} to={prop.to} key={key} />;
       })}
     </Switch>
   </Router>, document.getElementById('root'));

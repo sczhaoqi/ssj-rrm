@@ -38,8 +38,4 @@ class Home extends React.Component {
   }
 }
 
-Home.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
 export default withRouter(Home);
