@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 class Home extends React.Component {
@@ -25,7 +24,7 @@ class Home extends React.Component {
             SignOn</button>
         </main>
         <footer>
-          <div variant="h6" align="center" gutterBottom>
+          <div variant="h6" align="center">
             Footer
         </div>
           <div variant="subtitle1" align="center" color="textSecondary" component="p">
